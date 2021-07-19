@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+ul {
+  padding: 0;
+  font-size: 1.25rem;
+  font-family: "Open Sans" "Arial";
+  margin-bottom: 1rem;
+  margin: 0;
+}
+.profile-intro {
+  font-size: 25px;
+  line-break: normal;
+  font-family: "Open Sans" "Arial";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about-container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  margin-bottom: 3rem;
+}
+.edu-card-container {
+  width: 85%;
+  margin: 5rem 5rem 5rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+.resume-card-container {
+  width: 85%;
+  margin: 5rem 5rem 5rem 5rem;
+  display: grid;
+  grid-template-columns: 2fr;
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+.skill-container {
+  width: 85%;
+  margin: 5rem 5rem 5rem 5rem;
+}
+.project-card-container {
+  width: 85%;
+  margin: 5rem 5rem 5rem 5rem;
+  display: grid;
+  grid-template-columns: 2fr;
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+
+.resume-text {
+  font-size: 1.3rem;
+  font-family: "Open Sans" "Arial";
+  margin-top: 1rem;
+}
+.edu-degree {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-style: italic;
+  color:rgb(48, 153, 202);
+  margin:0;
+  padding-bottom: 0.5rem;
+}
+.edu-date {
+  font-size: 1.25rem;
+  font-family: "Open Sans" "Arial";
+  background-color: rgb(235, 233, 231);
+  padding: 0.5rem;
+  font-weight:800;
+  
+}
+.edu-course {
+  font-size: 1.25rem;
+  font-family: "Open Sans" "Arial";
+  margin-bottom: 1rem;
+  margin: 0;
+}
+
+.project-description {
+  font-style: italic;
+  font-family: 'Open Sans', 'Arial';
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.project-name {
+  font-family: 'Open Sans', 'Arial';
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+footer {
+  width: inherit;
+  height: auto;
+  background-color: rgb(247,248,250);
+  padding: 3rem;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-name {
+  margin: 0;
+  font-family: 'Open Sans', 'Arial';
+  font-size: 1.75rem;
+  color:rgb(88, 88, 92)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.design {
+  text-decoration: none;
+  color:rgb(48, 153, 202)
+}
+.icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem 1rem 1rem 1rem;
+  padding:  1rem 1rem 1rem 1rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+
+@media screen and (max-width: 800px) {
+  .intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .edu-card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .resume-card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .project-card-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
