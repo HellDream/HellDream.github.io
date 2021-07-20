@@ -149,9 +149,9 @@ const portfilio = {
     },
   ],
   socialLink: {
-    facebook: "",
-    instagram: "",
-    linkedIn: "linkedin.com/",
+    facebook: "https://www.facebook.com/yu.ye.10236",
+    instagram: "https://www.instagram.com/yzydreamer/",
+    linkedIn: "https://www.linkedin.com/in/zhenyu-ye-713b65133/",
     github: "github.com/helldream",
     email: "zhenyuye1996@gmail.com",
     website: "helldream.github.io",

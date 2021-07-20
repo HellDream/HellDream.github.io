@@ -12,6 +12,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Link from "@material-ui/core/Link";
 import lottieData from "../assets/lottie/lottie.json";
+import portfilio from "../portfilio";
 
 const useStyles = makeStyles((theme) => ({
   typedContainer: {
@@ -79,16 +80,16 @@ const AboutMe = () => {
             />
           </Typography>
           <Box className={classes.social} display="flex" flexDirection="row">
-            <Link className={classes.icons} href="#" color="inherit">
+            <Link className={classes.icons} href={portfilio.socialLink.facebook} color="inherit">
               <FacebookIcon fontSize="large" />
             </Link>
-            <Link className={classes.icons} href="#" color="inherit">
+            <Link className={classes.icons} href={portfilio.socialLink.instagram} color="inherit">
               <InstagramIcon fontSize="large" />
             </Link>
             <Link
               className={classes.icons}
               component="button"
-              href="#"
+              href={portfilio.socialLink.github}
               color="inherit"
             >
               <GitHubIcon fontSize="large" />
@@ -96,7 +97,7 @@ const AboutMe = () => {
             <Link
               className={classes.icons}
               component="button"
-              href="#"
+              href={portfilio.socialLink.linkedIn}
               color="inherit"
             >
               <LinkedInIcon fontSize="large" />
