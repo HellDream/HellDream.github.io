@@ -88,7 +88,6 @@ const AboutMe = () => {
             </Link>
             <Link
               className={classes.icons}
-              component="button"
               href={portfilio.socialLink.github}
               color="inherit"
             >
@@ -96,7 +95,6 @@ const AboutMe = () => {
             </Link>
             <Link
               className={classes.icons}
-              component="button"
               href={portfilio.socialLink.linkedIn}
               color="inherit"
             >
