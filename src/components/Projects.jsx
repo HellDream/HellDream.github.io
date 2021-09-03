@@ -35,7 +35,7 @@ const Projects = () => {
       alignItems="center"
       justifyContent="flex-start"
     >
-      <Fade right collapse>
+      <Fade right>
         <Box className={classes.title}>
           <Typography variant="h3">Projects</Typography>
           <Divider variant="middle" className={classes.divider} />
