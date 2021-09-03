@@ -28,7 +28,7 @@ const Education = () => {
   });
   return (
     <Box
-      id="resume"
+      id="education"
       className={classes.introContainer}
       display="flex"
       flexDirection="column"

@@ -28,7 +28,7 @@ const Projects = () => {
   })
   return (
     <Box
-      id="resume"
+      id="projects"
       className={classes.introContainer}
       display="flex"
       flexDirection="column"
